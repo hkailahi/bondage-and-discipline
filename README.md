@@ -31,8 +31,9 @@ ImportTool(locals_dict=locals())\
   .package_("org.package.com.fizz.buzz" )\
     .import_( "beanfunctor.optics.*" )\
 .ffi_( "hs" )\
+  .pragma_( ["RecordWildcards", "NPlusKPatterns", "PostfixOperators", "InterruptibleFFI", "Trustworthy"] )\
   .from_( "Prelude" )\
-    .import_( [ "head", "IO (IO)", "stackNub", "{#- LANGUAGE RecordWildcards,NPlusKPatterns,PostfixOperators,InterruptibleFFI,Trustworthy	-#}" ] )\
+    .import_( [ "head", "IO (IO)", "stackNub" ] )\
 .ffi_( "js" )\
   .package_( "left-pad" )\
     .import_( "leftPad" )
