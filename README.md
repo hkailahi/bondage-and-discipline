@@ -31,7 +31,7 @@ ImportTool(locals_dict=locals())\
   .package_("org.package.com.fizz.buzz" )\
     .import_( "beanfunctor.optics.*" )\
 .ffi_( "js" )\
-  .from_( "left-pad" )\
+  .package_( "left-pad" )\
     .import_( "leftPad" )
 
 assert a == 1
